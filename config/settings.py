@@ -74,12 +74,14 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-	'default': {
-    	'ENGINE': 'django.db.backends.mysql',
-    	'OPTIONS': {
-        	'read_default_file': '/etc/mysql/my.cnf',
-    	},
-	}
+    'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'mariadb',
+    'USER':'gold',
+    'PASSWORD':'1920',
+    'HOST':'localhost',
+    'PORT':'',
+    }
 }
 
 
